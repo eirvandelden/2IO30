@@ -1,0 +1,18 @@
+\begin{abstract}
+\textbf{Tijdens dit OGO-project hebben we een waferstepper
+nagemaakt. Een waferstepper is een machine die silicium wafers
+belicht met UV-licht om er IC's van te maken. Dit belichten gebeurt
+in een vacu\"{u}m, omdat UV-licht door de atmosfeer wordt
+geabsorbeerd en omdat de lens kapot gaat wanneer deze aan de
+buitenlucht wordt blootgesteld.}
+
+\textbf{De waferstepper zelf hebben we gebouwd met behulp van
+Fischertechnik. Hiermee zijn eenvoudig de echte loopbanden,
+sluisdeuren, lamp en sensoren na te bootsen. We sturen de machine
+aan met een processorbord met daarop een Siemens SAB-C504 processor.
+Deze hebben we geprogrammeerd met assembleertaal. Voordat we de
+processor geprogrammeerd hebben, hebben we een programmaontwerp
+gemaakt en getest in UPPAAL.}
+
+\end{abstract}
+\clearpage

@@ -1,0 +1,24 @@
+\section{Testresultaten en problemen}
+Wij hebben ons systeem natuurlijk ook getest. Hier volgen enkele tests die wij uitgevoerd hebben, samen met de resultaten hiervan. Daarnaast hebben we hier ook een paar problemen aangestipt die we onderweg tegenkwamen.
+
+\subsection{Problemen en mislukte tests}
+We beginnen met de problemen die we zijn tegengekomen en hoe we deze overwonnen hebben.
+
+\begin{itemize}
+    \item Lampjes: Hier hebben we toch wel wat problemen mee gehad, voooral omdat de lampjes eigenlijk op 12 volt werken. De enige aansluitingen die we hadden op de processor waren +5V, +16V en ground. 16 volt bleek te veel, de lampjes werden erg warm, wat de behuizing niet ten goede kwam. Een combinatie van 5 en 16 volt (resulterend in 11 volt) leek een goede keus, maar de processor vertoonde op slag kuren. Na wat meetwerk kwamen we erachter dat de 5 volt van de processor op deze manier omhooggetrokken werd tot 7 volt - dit kon nooit goed zijn. Hierna hebben we er voor gekozen om de lampjes toch maar op 5 volt aan te sluiten.
+    \item Sensoren (1): De sensoren hebben ons vrij veel problemen opgeleverd. Het eerste probleem was dat de sensoren aangesloten waren op een input-poort en de +5 volt. Aangezien de processor pull-up weerstanden heeft, kon het verschil tussen wel of geen actie niet waargenomen worden. Dit was gelukkig vrij makkelijk te verhelpen door de sensoren aan te sluiten op de ground in plaats van de +5 volt.
+    \item Sensoren (2): Omdat de lampjes niet op volle kracht werkten, konden we het verschil in lichtsterkte niet direct meten. In het begin hadden we het idee om een comparator tussen de sensoren en de processor te zetten, zo hoeven we niet in software de sensoren te ijken. We hadden in het begin de lampjes op 16 volt aangesloten, waarbij de comparator niet meer nodig was. Uiteindelijk hadden we de lampjes op 5 volt aangesloten en zijn weh dus toch maar comparators gaan halen, samen met een potmeter om de spanning in te stellen.
+    \item Sensoren (3): Zelfs met comparator waren de sensorwaarden niet uitleesbaar, deze keer omdat de spanning over de sensor gelijk bleef, alleen de weerstand veranderde. We hadden dus nog twee weerstandjes nodig die de verhouding van de spanning zou veranderen. Na deze weerstandjes toegevoegd te hebben konden we eindelijk de sensoren uitlezen.
+    \item Noodknop: De subroutine die de noodknop in de gaten hield gaf problemen: zodra dit bestand opgenomen werd in het hoofdprogramma en er op de noodknop gedrukt werd, reageerde TScope niet meer. Na de code goed nagekeken te hebben bleek dat de afhandeling van de interrupt niet correct was. 
+    \item Compressormotor: De motor van onze compressor is aangesloten op 16 volt. Dit zorgt natuurlijk voor de nodige luchtdruk, maar het heeft ook een nadeel: de motor en de aandrijfassen trillen aanzienlijk. Hierdoor bleven de wafers niet goed liggen tijdens het branden en verdwenen zij weer in de luchtsluis. Dit probleem was na enig nadenken verholpen door een verstevigende balk tegen het motorblok aan te brengen. De trilligen zwakten af en er kon normaal gewerkt worden.
+\end{itemize}
+
+\subsection{Geslaagde onderdelen}
+Hier volgen de onderdelen die functioneerden zoals we gehoopt hadden, zonder al te veel aanpassingen.
+
+\begin{itemize}
+    \item Motoren: De motoren van de lopende banden waren vrij makkelijk in te stellen. We hadden verwacht dat we Pulse Width Management moesten gebruiken om de juiste snelheid van de banden te bepalen en na een korte test op volle kracht bleek dit ook waar te zijn. Na een kleine verandering in de code liepen de banden perfect.
+    \item Deuren: Naast een paar luchtslangen die zo nu en dan losschoten deden de deuren het goed. De kleppen reageerden netjes op het programma en de druksensoren gaven (na de aanpassingen zoals hierboven beschreven) de goede waardes terug.
+    \item Verloren Wafers: Ook deze tests verliepen goed. Zodra een wafer als verloren is gemarkeerd springt een extra LED op het processorbordje aan. Als de vijfde wafer verloren is gegaan crasht het programma.
+    \item Daarnaast waren grote onderdelen van de programmatekst vrijwel meteen goed geschreven. Het UPPAAL-ontwerp heeft hier natuurlijk ook ontzettend aan bijgedragen, maar toch liep alles veel soepeler dan we verwacht hadden.
+\end{itemize}

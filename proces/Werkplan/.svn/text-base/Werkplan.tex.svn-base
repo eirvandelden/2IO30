@@ -1,0 +1,110 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 27-03-2007.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyheadings}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+
+\title{Werkplan - OGO 1.3, groep 7 }
+
+
+\date{versie 3.0}
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Mechanisch }
+  \begin{itemize}
+    \item Ontwerp (Gijs)
+    \begin{itemize}
+        \item Schets
+        \item Specificatie technische details
+    \end{itemize}
+    \item Bouwen ontwerp (Sanne)
+  \end{itemize}
+
+\section{Software}
+  \begin{itemize}
+    \item Schrijven basis (Stef)
+    \begin{itemize}
+        \item I/O subroutines
+        \item Interrupt handlers
+    \end{itemize}
+    \item Aansturen mechanisch ontwerp (Coen)
+    \begin{itemize}
+        \item Index-based
+    \end{itemize}
+  \end{itemize}
+
+\section{Misc.}
+  \begin{itemize}
+    \item Documentatie (hele groep)
+    \item Demonstratie met uitleg (Etienne)
+    \item Handleiding (Bas)
+    \item Verslag (Bas)
+  \end{itemize}
+
+\section{Deadlines}
+
+    \begin{tabular}{l | c | c | c | c }
+      Onderdeel & Verantwoordelijke & Start datum & Interne deadline & Externe deadline\\
+      \hline
+      Ontwerp en operationele specificatie & Gijs/Etienne & 26-03 & 18-04 & 23-04  \\
+      ~~~ UPPAAL & Gijs & 26-03 & 16-04*&23-04\\
+      ~~~ Tekeningen (foto's) & Etienne & 26-03 & 18-04 &23-04\\
+      Specificatie elektrische interface & Gijs/Sanne & 26-03 & 23-04* & 23-04 \\
+      ~~~ Bedradingsschema & Gijs & 26-03 & 16-04* & 23-04\\
+      ~~~ Model (hardware) & Sanne & 26-03 & 23-04 & n.v.t.\\
+      Programma ontwerp (UPPAAL) & Stef & 16-04 & 24-05* & 24-05\\
+      Systeem analyse (UPPAAL) & Coen & 23-04 & 24-05 & 24-05\\
+      Implementatie & Stef/Coen & 23-04 & 25-05* & n.v.t. \\
+      ~~~ Assembler code&Stef&23-04 & 25-05* & n.v.t.\\
+      ~~~ Aansturen mechanisch ontwerp &Coen&23-04 & 25-05* & n.v.t.\\
+      Verslag en documentatie & Bas & 26-03 & 04-06* & 11-06\\
+      Demonstratie met uitleg & Etienne & 30-05 & n.v.t. & 14-06\\
+
+    \end{tabular} \\ \\
+*voor 12.00 uur inleveren
+
+
+
+
+
+
+
+\end{document}

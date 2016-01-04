@@ -1,0 +1,14 @@
+Dit zijn al onze UPPAAL componenten.
+
+\begin{itemize}
+    \item ``ProgramInit'' wordt aan het begin van het programma uitgevoerd. Dit zorgt ervoor dat alle actoren in een wenselijke toestand zijn.
+    \item ``Button'' staat voor een knop (noodknop of startknop). Een button kan pressed of released zijn. Wij hebben een algemene knop gemodelleerd, die apart wordt afgehandeld.
+    \item ``Lamp'' staat voor een LED of de UV-lamp. Deze kan aan of uit staan.
+    \item ``Conveyor'' is de lopende band die maar 1 kant op kan lopen. Deze kan dus 'aan' (running) of 'uit' (stopped) zijn.
+    \item ``ConveyorBF'' kan heen en terug lopen. Er zijn dus staten voor back, forward en stopped nodig.
+    \item ``Door'' is het model van een deur. Een deur kan open of dicht zijn, maar daarnaast ook nog bezig zijn met openen of sluiten. Als een geopende deur een open-signaal krijgt (of een gesloten deur een sluit-signaal), dan wordt dit verwerkt door meteen aan te geven dat de deur klaar is met openen (of sluiten).
+    \item ``Sensor'' is een licht- of druksensor. Een sensor kan Sense of NoSense zijn - hij neemt iets waar of hij neemt niets waar.
+    \item ``FallOff'' - dit is een speciaal geval. Het is niet echt een hardware-component (ondanks dat er wel LEDs aan en uit gaan ten gevolge van de toestand van dit onderdeel). FallOff houdt bij hoeveel wafers van de band gevallen zijn. Zodra er vijf wafers verloren zijn gegaan 'crasht' ons systeem (dit is een noodtoestand). We houden dit op deze manier bij omdat de hoeveelheid verloren wafers van groot belang is voor de werking van het systeem.
+\end{itemize} \\
+Veel van de componenten hebben een onbekende beginstand, een gegeven dat gemodelleerd is door vanuit Init een stap te maken naar een willekeurige toestand.\\
+Daarnaast wordt van veel componenten verwacht dat ze een signaal kunnen versturen,  (``deze deur staat open!'') - dit wordt gedaan door in elke  'stabiele' toestand (de deur staat open) een loopje naar dezelfde toestand te maken. Deze loop verstuurt een signaal over de gewenste channel.

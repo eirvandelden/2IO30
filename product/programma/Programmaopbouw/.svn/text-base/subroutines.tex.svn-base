@@ -1,0 +1,105 @@
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+\usepackage[dutch]{babel}
+\usepackage{graphicx}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+\title{Opbouw implementatie}
+\author{Stef Sijben}
+
+\begin{document}
+\maketitle
+
+
+\section{Algemeen}
+In dit bestand wordt beschreven welke subroutines er nodig zijn in
+het programma. Sommige van deze subroutines hebben parameters of
+geven een waarde terug. In het geval van parameters wordt A of, in
+het geval van meerdere parameters, R0..Rn gebruikt om deze door te
+geven. Return waardes worden afhankelijk van hun type verschillend
+teruggegeven: booleans komen in de carry bit, andere types in A.
+
+\section{Low-level I/O}
+De subroutines die hierbij horen worden doen heel simpele dingen,
+als het in- of uitschakelen van een enkele motor, lamp of ventiel of
+het uitlezen van een enkele sensor. Hier komt dus gewoon voor elk
+hardwareapparaat een of meerdere subroutines.
+
+\section{Belangrijke acties}
+
+\subsection{Wafer verplaatsen}
+Hierin komen een paar subroutines die zorgen dat de tweede lopende
+band voor een bepaald aantal seconden of totdat een sensor iets
+registreert in een bepaalde richting beweegt.
+
+Daarnaast is er een subroutine die probeert een wafer van de eerste
+band te halen.
+
+\begin{itemize}
+  \item MoveForwardT(s): laat de tweede lopende band voor s * factor
+  seconden voorwaarts bewegen en stop dan.
+  \item MoveBackwardT(s): idem, maar dan achteruit.
+  \item MoveForwardS1, MoveForwardS2: Laat de tweede lopende band
+  voorwaarts bewegen totdat lichtsensor 1 resp. 2 iets registreert
+  en return true, of als de sensor na een vooraf vastgestelde tijd
+  nog niets geregistreerd heeft, return false.
+  \item MoveBackwardS1, MoveBackwardS2: idem, maar dan achteruit.
+  \item LoadWafer: Probeer een wafer te laden van de eerste band.
+  Als een wafer klaar ligt, return true.
+  Als dit na een vastgestelde tijd nog niet gelukt is, return false.
+\end{itemize}
+
+\subsection{Luchtsluis}
+Hierin komen subroutines voor het openen en sluiten van de deuren.
+
+\begin{itemize}
+  \item OpenDoor1, OpenDoor2: Controleer of de andere deur dicht is
+  en zo ja, open de desbetreffende deur en controleer of hij open
+  is. Return of dit gelukt is.
+  \item CloseDoor1, CloseDoor2: Sluit een deur en controleer of ze
+  echt dicht is. Return of dit gelukt is.
+\end{itemize}
+
+Doe een paar pogingen om een deur open of dicht te krijgen en return
+pas false als het dan nog steeds niet gelukt is. In dat geval lijkt
+de deur dus vast te zitten en moet het programma stoppen.
+
+\subsection{UV lamp}
+Hierin zit enkel de subroutine die het daadwerkelijk branden van de
+wafer afhandelt.
+
+\begin{itemize}
+  \item Burn: Verander de Interrupt vector van de noodknop naar
+  EMBurn, schakel de lamp in, wacht 2 seconden, schakel de lamp weer
+  uit en zet de interrupt vector weer terug naar EMStandard.
+\end{itemize}
+
+\subsection{onderbrekingen}
+Hierin komen interrupt handlers voor de noodstop en voor het
+verliezen van wafers.
+
+\begin{itemize}
+  \item EMStandard: De normale handler voor het indrukken van de
+  noodstop. Sla de toestand van alle uitvoerpoorten ergens op en
+  schakel vervolgens alles uit. Wacht dan tot de noodstop opnieuw
+  wordt ingedrukt en herstel dan alle uitvoerpoorten naar hun oude
+  toestand.
+  \item EMBurn: De handler voor het indrukken van de noodstop
+  tijdens het branden van een wafer. In dat geval is de wafer
+  mislukt en wordt de lamp uitgeschakeld. Bij het opnieuw indrukken
+  van de knop wordt de wafer naar de afvalbak getransporteerd en
+  vervolgens keren de deuren terug in hun uitgangspositie, waarna de
+  volgende wafer geladen wordt.
+  \item WaferLost: Registreer een verloren wafer, als er hierna nog
+  steeds minder dan 5 verloren zijn, gaat het systeem naar de
+  uitgangspositie en probeert de volgende wafer te laden. Als er wel
+  5 verloren zijn crasht het systeem.
+\end{itemize}
+
+
+\end{document}

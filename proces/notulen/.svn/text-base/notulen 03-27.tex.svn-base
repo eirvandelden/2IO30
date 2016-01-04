@@ -1,0 +1,91 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{27-03-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: 13:40 uur }
+    \begin{itemize}
+        \item Voorzitter: Etienne van Delden
+        \item Notulist: Coen van der Wel
+        \item Afwezige leden: n.v.t.
+    \end{itemize}
+
+\section{Bespreken van notulen vorige vergadering}
+    \begin{itemize}
+        \item n.v.t.
+    \end{itemize}
+
+\section{Afspraken}
+    \begin{itemize}
+        \item Templates \begin{itemize}
+            \item Template agenda in orde, extra punten: W.V.T.T.K., vragenrondje, studentennummers.
+            \item Iedereen is verantwoordelijk voor zijn eigen logboek
+            \item Aparte mappen in StudyWeb voor logboek, agenda's en notulen.
+            \end{itemize}
+        \item Codeerstandaard \begin{itemize}
+            \item 4 spaties als TAB
+            \item Boven een label/subroutine komt commentaar (verplicht)
+            \item Voor en na subroutines 1 lege regel
+            \item Boven een subroutine verplicht melden van gebruikte resources
+            \item Na 40 tekens het commentaar per regel
+            \item Twee TABS voor code vrijhouden, hier kunnen labels komen
+            \end{itemize}
+        \item Taken (voor volgende vergadering) \begin{itemize}
+            \item Vergaderrooster wordt door Stef geregeld
+            \item Template maken voor logboek door Coen (in Excel)
+            \item Template maken voor agenda en notulen door Etienne (in LaTeX)
+            \item Iedereen doorlezen opdracht
+            \end{itemize}
+        \item Communicatie \begin{itemize}
+            \item Gijs: 0645372269
+            \item Sanne: 0642401579
+            \item Bas: 0622665364
+            \item Stef: 0650886954
+            \item Etienne: 0618243812
+            \item Coen: 0653608505
+            \end{itemize}
+        \item Afspraken \begin{itemize}
+            \item Afmelden voor een vergadering bij voorzitter!
+            \item Kluissleutel wordt bewaard door Etienne
+            \item Alle documentatie in LaTeX
+            \item Notulist levert notulen in vlak na de vergadering (SW + postvakje)
+            \item Vlak voor vergadering uiterlijk updaten logboek
+            \end{itemize}
+    \end{itemize}
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om 14:16
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

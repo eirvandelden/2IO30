@@ -1,0 +1,17 @@
+\select@language {dutch}
+\contentsline {chapter}{\numberline {1}Inleiding}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Hardware}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Opzet van het model}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Foto's van het model}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Lamp}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Sensor}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Lopende band (vooruit)}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Lopende band (vooruit)}{11}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Knop}{12}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Deur}{13}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Luchtkleppen}{15}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Compressor}{16}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Pnematische Cilinder}{17}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}Bak}{18}{subsection.2.2.10}
+\contentsline {chapter}{\numberline {3}UPPAAL model}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Ontwerp Beslissingen}{23}{section.3.1}

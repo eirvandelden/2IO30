@@ -1,0 +1,93 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{27-03-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: $tijd$ uur }
+    \begin{itemize}
+        \item Voorzitter: $voorzitter$
+        \item Notulist: $notulist$
+        \item Afwezige leden: $afwezigen$
+    \end{itemize}
+
+\section{Bespreken van notulen vorige vergadering}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Mededelingen voorzitter}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Mededelingen tutor}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Mededelingen leden}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Huishoudelijk}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Opdracht bespreking}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Verslaglegging}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Planning}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{W.V.T.T.K.}
+    \begin{itemize}
+        \item $inhoud$
+    \end{itemize}
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om $tijd$
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

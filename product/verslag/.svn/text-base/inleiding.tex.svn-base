@@ -1,0 +1,2 @@
+Dit document beschrijft op een (betrekkelijk) abstract niveau de opzet van ons ontwerp voor een Wafer stepper. Hierbij hebben wij de aanwijzingen gevolgd uit het document ``Projectwijzer OGO1.3''.
+Wij bespreken zowel de implementatie in het hardware model, als het ontwerp in UPPAAL.

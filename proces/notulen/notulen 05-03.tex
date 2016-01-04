@@ -1,0 +1,153 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{03-05-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: 13:28 uur }
+    \begin{itemize}
+        \item Voorzitter: Coen van der Wel
+        \item Notulist: Stef Sijben
+        \item Afwezige leden: -
+    \end{itemize}
+
+\section{Bespreken van notulen vorige vergadering}
+    \begin{itemize}
+        \item Punt 6: Iedereen werkt iedere dinsdag aan OGO moet
+        zijn: Iedereen is elke dinsdag aanwezig.
+    \end{itemize}
+
+\section{Mededelingen voorzitter}
+    \begin{itemize}
+        \item In subversion is revisie 100 bereikt.
+        \item Groep 2 moet aangesproken worden op de rotzooi die ze
+        achtergelaten hebben.
+    \end{itemize}
+
+\section{Mededelingen tutor}
+    \begin{itemize}
+        \item Eerstvolgende vergadering is 15 mei in de grote
+        ruimte.
+        \item Bas en Coen moeten hun logboek nog bijwerken.
+        \item Het studentenoverleg is een week uitgesteld.
+    \end{itemize}
+
+\section{Mededelingen leden}
+    \begin{itemize}
+        \item -
+    \end{itemize}
+
+\section{Ontwerpverslag}
+    \begin{itemize}
+        \item Controller op abstract niveau wel opnemen in het
+        ontwerpverslag i.v.m. de semantiek van het optreden van
+        transities in netwerken van timed automata. In dit verslag
+        is de matching tussen in- en uitgaande communicatie niet
+        aanwezig.
+        \item De noodknop moet ook gemodelleerd worden in het UPPAAL
+        model. In de afhandeling hiervan moet het indrukken van de
+        noodknop tijdens het belichten een uitzondering vormen op
+        normaal.
+        \item Het feit dat het programma crashed als er 5 wafers van
+        de band zijn gevallen moet expliciet gemodelleerd worden,
+        ook aan de kant van de ontvangst van het crash-signaal.
+        \item In het ontwerpverslag mag expliciet de aanname worden
+        gemaakt dat elk onderdeel van het ontwerp een nette
+        begintoestand heeft.
+        \item Er moet misschien onderscheid worden gemaakt tussen de
+        ready button en de emergency button. Transities tussen de
+        toestanden van de button kunnen beter met synchronisatie
+        gemodelleerd worden.
+        \item Er moet een inleiding toegevoegd worden.
+        \item Er moet een opsomming toegevoegd worden van de namen van sensoren in
+        UPPAAL met de functie die deze sensor in het hardwaremodel
+        heeft.
+        \item Het is misschien niet toegestaan om de DIP-switches op
+        het processorbord te gebruiken als ready- en noodstopknop.
+        \item De UPPAAL-templates horen niet in een appendix, de
+        ontwerpbeslissingen in sectie 1.3 kunnen beter naar
+        hoofdstuk 2 gaan.
+        \item De eerste twee alinea's van sectie 1.4 kunnen beter
+        naar hoofdstuk 2.
+        \item Let op het gebruik van woorden als staten in een
+        Nederlandse tekst.
+    \end{itemize}
+
+\section{Opdracht bespreking}
+    \begin{itemize}
+        \item In het programmaontwerp wordt de controller
+        gemodelleerd als een netwerk van automaten, waarin elke
+        subroutine als een template gemodelleerd wordt.
+        \item In de systeemanalyse is het misschien mogelijk om
+        toch voor alle paden te verifi\"eren dat een wafer binnen een
+        bepaalde tijd uit het systeem is. Om dit te bereiken zou er
+        in een variabele bijgehouden moeten worden of de noodstop
+        tijdens het verwerken van die wafer is ingedrukt of niet. De
+        verificatie zou dan gaan over alle paden waarin de noodstop
+        niet is ingedrukt.
+    \end{itemize}
+
+\section{Planning}
+    \begin{itemize}
+        \item Het is belangrijk wat de feedback op het
+        ontwerpverslag betekent voor het project. Moeten alleen
+        verslagen aangepast worden of zijn er ook gevolgen voor
+        andere delen van het project?
+        \item Programmaontwerp snel inleveren
+        \item Voor de systeemanalyse is uitstel mogelijk, deze is
+        bijna af.
+        \item Deze week zo veel mogelijk zaken nog inleveren.
+        \item Coen, Stef en Bas gaan werken aan de systeemanalyse.
+        \item Etienne en Gijs gaan werken aan de verbeterde versie
+        van het ontwerpverslag.
+        \item Sanne werkt het schema van voorzitters en notulisten
+        bij.
+    \end{itemize}
+
+\section{Verslaglegging}
+    \begin{itemize}
+        \item Alles is duidelijk
+    \end{itemize}
+
+\section{W.V.T.T.K.}
+    \begin{itemize}
+        \item Door feedback op verslagen loopt de vergadering uit.
+        Daarom zal de volgende keer niet alle commentaar toegelicht
+        worden, alleen waar dat nodig is.
+    \end{itemize}
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om 14:08
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

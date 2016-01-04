@@ -1,0 +1,194 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 27-03-2007.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyheadings}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Agenda - OGO 1.3, groep }
+\author{ Etienne van Delden  }
+
+\date{27-03-2007}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+
+\section{Opening vergadering: <time> uur }
+  \begin{itemize}
+    \item Voorzitter: Etienne van Delden
+    \item Notulist: Coen van der Wel
+    \item Introductie leden
+    \item Aanwezigheid leden:
+
+    \begin{tabular}{c | c | l}
+      aanwezig & nummer & naam \\
+      \hline
+      $\square$ & 0618959 & Etienne van Delden \\
+      $\square$ & 0611093 & Gijs Direks \\
+      $\square$ & 0588898 & Sanne Ernst \\
+      $\square$ & 0598669 & Bas Goorden \\
+      $\square$ & 0607426 & Stef Sijben\\
+      $\square$ & 0608467 & Coen van der Wel \\
+
+    \end{tabular}
+
+  \end{itemize}
+
+\section{Vaststelling van de agenda}
+
+%\section{Bespreken van notulen vorige vergadering}
+
+\section{Mededelingen}
+\begin{itemize}
+  \item Voorzitter:
+  \begin{itemize}
+    \item ( Er heeft al een eerste vergadering plaatsgevonden )
+     \item Eerste OGO voor Gijs en Stef
+     \item Er is een kluisje aangesteld voor onze fishertechniek doos, kluis 14.
+     \item Er is een mailing list: ogo1.3@coenvdwel.com
+     \item Locatie: HG 10.57 is, op de donderdag, voor ons gereserveerd
+  \end{itemize}
+  \item Tutor
+  \item Leden
+\end{itemize}
+
+\section{Afspraken werkwijze}\label{sec:afspraken_werkwijze} % (fold)
+
+\begin{itemize}
+    \item Templates:
+        \begin{itemize}
+            \item Agenda ( template is beschikbaar )
+            \item Notulen ( template is beschikbaar )
+            \item Documentatie ((PDF)\LaTeX : index.tex met input van losse chapters en sections)
+            \item E-mails: Pre-fix: OGO1.3:  (automatisch via mailing list)
+            \item Mappen structuur (indien gebruik van SVN of iets derg.)
+        \end{itemize}
+
+    \item Logboek:
+        \begin{itemize}
+            \item Systeem: LMS ? Excel / spreadsheet ? \LaTeX (tables)? PHP database?
+            \item Formaat: Begin/eind tijd <-> gewerkte uren, extra info ?
+            \item Zelf verantwoordelijk, aanstellen hoofd verantwoordelijke?
+        \end{itemize}
+
+    \item OGO1.3 Human Interface Guidelines:
+        \begin{itemize}
+            \item Codeerstandaard:
+                \begin{itemize}
+                    \item variabelen naamgeving
+                    \item constanten naamgeving
+                    \item functies naamgeving
+                    \item commentaar plaatsing + wijze van commentaar
+                    \item gebruik van onderverdeling documenten
+                    \item lege regels
+                    \item tabs (hard / soft tab, tab op 2)
+                \end{itemize}
+        \end{itemize}
+
+    \item Vergaderingen: Rooster (voorkeur notulist / voorzitter )
+
+    \item Communicatie:
+        \begin{itemize}
+            \item Contactgegevens uitwisselen (contactpersoon aanstellen bij verzuim?)
+            \item Wijze van digitaal vergaderen: MSN / AOL / IRC / Skype / TeamSpeak
+            \item SVN server, wie host? (.Mac Groups ?)
+            \item Collaborative text editing, platform onafhankelijke oplossing? Denk Google Write.
+        \end{itemize}
+
+\end{itemize}
+
+% section afspraken_werkwijze (end)
+
+\section{Opdracht bespreking}
+
+  \begin{itemize}
+    \item Doorlezen projectwijzer
+    \item Opsplitsen van het project
+    \item (Verantwoordelijkheden onderverdelen)
+  \end{itemize}
+
+\section{Verslaglegging}
+
+  \begin{itemize}
+    \item Opsplitsing van document, waar moet het sowieso uit bestaan
+    \item Hoofd verantwoordelijke voor het totale document / Deels verantwoordelijke aanstellen
+    \item (Aan de hand van de afgesproken standaard voor documentatie eerste documenten aanmaken)
+  \end{itemize}
+
+\section{Planning}
+  \begin{itemize}
+    \item Wat moet er deze week nog gebeuren?
+    \item Planning voor volgende week
+    \item Werkplan maken
+  \end{itemize}
+
+  \section{Vragenrondje}\label{sec:vraagrondje} % (fold)
+
+  % section vraagrondje (end)
+
+  \section{W.V.T.T.K.}\label{sec:w_v_t_t_k_} % (fold)
+  \emph{Wat verder ter tafel komt:}
+  % section w_v_t_t_k_ (end)
+
+\section{Evaluatie}
+  \begin{itemize}
+    \item Doorlopen van gemaakte afspraken
+  \end{itemize}
+
+\section{Sluiting}
+
+$\boxtimes$
+
+\end{document}

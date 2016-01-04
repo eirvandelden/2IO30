@@ -1,0 +1,76 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{29-03-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: 13:37 uur }
+    \begin{itemize}
+        \item Voorzitter: Etienne van Delden
+        \item Notulist: Coen van der Wel
+        \item Afwezige leden: n.v.t.
+    \end{itemize}
+
+\section{Bespreken van notulen vorige vergadering}
+    \begin{itemize}
+        \item Waren in orde.
+    \end{itemize}
+
+\section{Afspraken}
+    \begin{itemize}
+        \item Mededelingen \begin{itemize}
+            \item - Wellicht nieuwe werktijd op dinsdag zoeken
+            \item Notulen moeten uiterlijk 3 werkdagen van te voren in het postvakje van tutor worden ingeleverd
+            \item Donderdag middag vergadering als eerste vergadering
+            \item Uitzondering van hierboven op donderdag a.s. (volgende vergadering) vanwege een cursus 5e en 6e uur in AUD10
+            \item Mechanische problemen (analoge signalen naar digitaal vertalen); reserveer ong. 3 weken hiervoor!
+            \item Let op: laatste deel is veel werk
+            \item "Expert" is Mohammed Mousavi
+            \end{itemize}
+        \item Taken \begin{itemize}
+            \item Werkplan voor 5 uur vandaag in het postvakje van tutor en SW
+            \item Logboek overleg
+            \item Linken logboek/SVN
+            \item Inventariseren projecttaken / documentatie plannen
+            \end{itemize}
+        \item Sidenote \begin{itemize}
+            \item Mogelijkheid tot declareren variabelen?
+            \item Mogelijkheid tot extra hardware (aan expert)?
+            \end{itemize}
+    \end{itemize}
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om 14:01
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

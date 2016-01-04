@@ -1,0 +1,53 @@
+8
+
+dir
+225
+https://svn.stefsybo.nl/OGO1.3/product/programma/Programmaopbouw
+https://svn.stefsybo.nl/OGO1.3
+
+
+
+2007-04-26T15:11:09.104689Z
+80
+stef
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+32159d3f-aa2c-0410-a356-cacda1791be4
+
+subroutines.tex
+file
+
+
+
+
+2007-05-29T18:40:49.000000Z
+f6a165e8cb806fff83f1c6462f10f633
+2007-04-26T15:11:09.104689Z
+80
+stef
+
+subroutines.pdf
+file
+
+
+
+
+2007-05-29T18:40:49.000000Z
+3b6fbb2e20600d55ea6a01c07865c3e4
+2007-04-26T15:11:09.104689Z
+80
+stef
+has-props
+

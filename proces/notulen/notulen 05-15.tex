@@ -1,0 +1,83 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{27-03-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: 13:35 uur }
+    \begin{itemize}
+        \item Voorzitter: Coen van der Wel
+        \item Notulist: Gijs Direks
+        \item Afwezige leden: Etienne van Delden (afgemeld)
+    \end{itemize}
+
+    
+\section{Mededelingen tutor}
+    \begin{itemize}
+        \item Vanaf deze week is HG 10.43 onze niewe ruimte.
+        \item De presentatietraining is op donderdag 7 juni. Dit valt samen met de laatste vergadering. We bekijken later nog of we de vergadering verzetten of toch houden.
+        \item De proefvoordrachten duren maar 10 minuten in plaats van 15.
+    \end{itemize}
+
+\section{Mededelingen leden}
+    \begin{itemize}
+        \item Sanne en Bas hebben dit blok op donderdags het vijfde en het zesde uur les. Hierdoor wordt de vergadering verzet naar ongeveer 15:15 uur.
+    \end{itemize}
+
+\section{Opdracht bespreking en verslaglegging}
+    \begin{itemize}
+        \item We gebruiken nu data in plaats van versienummers op onze verslagen. Dit is een beetje slordig - we zorgen ervoor dat versienummers nu standaard gebruikt worden.
+        \item Assemblyprogramma: Als een loop voorkomt in het programma is het wenselijk dat de guards hiervan, alsmede de invarianten, ook in het UPPAAL programmaontwerp terugkomen.
+        \item Ontwerpverslag: De ontwerpbeslissingen moeten beter over de hoofdstukken verdeeld worden, de laatste vier alinea's van blz. 22 kunnen terug naar hoofdstuk 2.
+        \item Ontwerpverslag: De init-template is overbodig, we kunnen aannemen dat er een bepaalde begintoestand is (als we die vermelden). Eventueel kunnen we expliciet vermelden dat de init-template opgenomen is omdat het processorbord in een willekeurige toestand opstart.
+        \item Ontwerpverslag: De labels van de componenten D1, D2, R1, R2 komen niet terug in de foto's of het UPPAAL-model.
+        \item Ontwerpverslag: De start/noodknop hebben nu nog eenzelfde template. Licht toe waarom of verander dit.
+        \item Ontwerpverslag: Het is onduidelijk of Button1 de noodknop of de readyknop is. Geef dit even aan. Daarnaast is bRelease2 afwezig - klopt dit?
+        \item Ontwerpverslag: Het verschil tussen sensor en button: Sensor is 'stabiel' gemodelleerd, button is 'instabiel' gemodelleerd. Dit moet aangepast of toegelicht worden.
+        \item Dipswitches: We moeten nog even nagaan of dhr. Moussavi het goed vindt als we een dipswitch als knop gebruiken, hij had dit namelijk expliciet verboden bij groep 8.
+        \item Programmaontwerp: Routines die in het assemblyprogramma voorkomen worden als aparte templates verwerkt in UPPAAL, er is een soort maincontroller die specifieke kleine controllers aanroept.
+    \end{itemize}
+
+\section{Planning}
+    \begin{itemize}
+        \item Het programmaontwerp moet worden aangepast. Dit wordt vandaag (15 mei) nog ingeleverd.
+        \item De systeemanalyse moet het liefst vandaag nog af. Als dit niet lukt wordt dit alsnog op maandag voor 12 uur ingeleverd.
+        \item De implementatie wordt ingeleverd op vrijdag 25-05 voor 12 uur.
+    \end{itemize}
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om 14:15
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

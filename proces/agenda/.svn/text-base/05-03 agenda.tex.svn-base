@@ -1,0 +1,79 @@
+\documentclass[]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+
+\title{Agenda OGO 1.3, groep 7 }
+\author{Coen van der Wel}
+\date{05-03-2007}
+
+\begin{document}
+
+
+    \maketitle
+
+    \section{Opening vergadering}
+    \begin{itemize}
+        \item Voorzitter: Coen van der Wel
+        \item Notulist: Stef Sijben
+        \item   \begin{tabular}{c | c | l}
+                    aanwezig & nummer & naam \\
+                    \hline
+                    $\square$ & 0618959 & Etienne van Delden \\
+                    $\square$ & 0611093 & Gijs Direks \\
+                    $\square$ & 0588898 & Sanne Ernst \\
+                    $\square$ & 0598669 & Bas Goorden \\
+                    $\square$ & 0607426 & Stef Sijben\\
+                    $\square$ & 0608467 & Coen van der Wel \\
+                \end{tabular}
+    \end{itemize}
+
+    \section{Vaststelling van de agenda}
+
+    \section{Bespreken van notulen vorige vergadering}
+
+    \section{Mededelingen}
+    \begin{itemize}
+        \item Voorzitter
+        \item Tutor
+        \item Leden
+    \end{itemize}
+
+    \section{Opdracht bespreking}
+    \begin{itemize}
+        \item Achter op schema, bespreken bij Planning.
+    \end{itemize}
+
+    \section{Planning}
+    \begin{itemize}
+        \item Welke verslagen hadden we al in moeten leveren?
+        \item Welke verslagen moeten we deze week inleveren?
+        \item Wat is de taakverdeling voor vandaag?
+    \end{itemize}
+
+    \section{Verslaglegging}
+    \begin{itemize}
+        \item Is hetgeen in te leveren duidelijk qua inhoud?
+    \end{itemize}
+
+    \section{W.V.T.T.K.}
+
+    \section{Vragenrondje}
+
+    \section{Evaluatie}
+    \begin{itemize}
+        \item Doorlopen van gemaakte afspraken door notulist.
+    \end{itemize}
+
+    \section{Sluiting}
+
+    $\boxtimes$
+
+
+\end{document}

@@ -1,0 +1,17 @@
+\BOOKMARK [0][-]{title.0}{Titelblad}{}
+\BOOKMARK [0][-]{chapter.1}{Inleiding}{}
+\BOOKMARK [0][-]{chapter.2}{Hardware}{}
+\BOOKMARK [1][-]{section.2.1}{Opzet van het model}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Foto's van het model}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Lamp}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Sensor}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Lopende band \(vooruit\)}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.4}{Lopende band \(vooruit\)}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.5}{Knop}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.6}{Deur}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.7}{Luchtkleppen}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.8}{Compressor}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.9}{Pnematische Cilinder}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.10}{Bak}{section.2.2}
+\BOOKMARK [0][-]{chapter.3}{UPPAAL model}{}
+\BOOKMARK [1][-]{section.3.1}{Ontwerp Beslissingen}{chapter.3}

@@ -1,0 +1,288 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title:   Template 'Door'.
+%%Creator: UPPAAL 4.0.6 (rev. 2987), March 2007
+%%Pages: 0
+%%BoundingBox: -169 -101 123 13
+%%EndComments
+
+% Basic coordinate transformation.
+0.5 0.5 scale
+
+% Move the origin.
+0 -176 translate
+
+% Size of graphical elements.
+/vertex-radius 12 def
+/vertex-urgent-radius 5 def
+/vertex-commit-radius 5 def
+/vertex-init-radius 8 def
+/vertex-lw 1.2 def
+/edge-lw 0.5 def
+
+% Color setting of graphical elements.
+/black { 0 0 0 setrgbcolor } def
+/vertex-fill-col { 0.647 0.686 0.803 setrgbcolor} def
+/vertex-ol-col { black } def
+/urgent-ol-col { black } def
+/commit-ol-col { black } def
+/initial-ol-col { black } def
+/state-name-col { 0.192 0.396 0.549 setrgbcolor } def
+/inv-col { state-name-col } def
+/select-col { 0.541 0.220 0.380 setrgbcolor } def
+/guard-col { select-col } def
+/sync-col { guard-col } def
+/assign-col { guard-col } def
+/trans-col { black } def
+
+% Draw (filled) vertex at given position.
+/vertex { 
+   2 copy
+   vertex-fill-col
+   newpath vertex-lw setlinewidth 
+   /vertex-radius load 0 360 arc fill
+   vertex-ol-col
+   /vertex-radius load 0 360 arc stroke
+} def
+
+% Mark vertex as urgent.
+/urgent { 
+   urgent-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-urgent-radius load 150 30 arc stroke 
+} def
+
+% Mark vertex as committed.
+/commit { 
+   commit-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-commit-radius load 50 310 arc stroke 
+} def
+
+% Mark vertex as initial.
+/initial { 
+   initial-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-init-radius load 0 360 arc stroke 
+} def
+
+% Vertices.
+% Font used for vertex names and invariants.
+/Helvetica-Bold findfont 14 scalefont setfont
+0 88 vertex
+   0 -14 moveto state-name-col () show
+   0 -14 moveto inv-col () show
+-168 88 vertex
+   0 -14 moveto state-name-col () show
+   0 -14 moveto inv-col () show
+-88 88 vertex
+   -88 88 initial
+   -88 88 urgent
+   -98 104 moveto state-name-col (Init) show
+   0 -14 moveto inv-col () show
+-320 160 vertex
+   -320 160 urgent
+   -336 130 moveto state-name-col (PseudoClosing) show
+   0 -14 moveto inv-col () show
+144 16 vertex
+   144 16 urgent
+   134 32 moveto state-name-col (PseudoOpening) show
+   0 -14 moveto inv-col () show
+-168 16 vertex
+   -232 10 moveto state-name-col (Closing) show
+   -208 -6 moveto inv-col (dcl <= 1) show
+0 16 vertex
+   -16 -6 moveto state-name-col (Open) show
+   0 -14 moveto inv-col () show
+0 160 vertex
+   16 154 moveto state-name-col (Opening) show
+   -8 178 moveto inv-col (dcl <= 1) show
+-168 160 vertex
+   -184 178 moveto state-name-col (Closed) show
+   0 -14 moveto inv-col () show
+
+% Edges.
+% Font used for selects, guards, syncs and assigns.
+/Helvetica findfont 14 scalefont setfont
+newpath edge-lw setlinewidth
+   trans-col
+   0.0 76.0   moveto
+   0.0 28.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   2.5881905555725098 37.65925598144531   moveto
+   0.0 28.0   lineto
+   -2.5881905555725098 37.65925598144531   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   8 58 moveto sync-col (dOpened[did]!) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   0.0 148.0   moveto
+   0.0 100.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   2.5881905555725098 109.65925598144531   moveto
+   0.0 100.0   lineto
+   -2.5881905555725098 109.65925598144531   lineto
+stroke
+   0 -14 moveto select-col () show
+   8 122 moveto guard-col (dcl >= 1) show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -168.0 100.0   moveto
+   -168.0 148.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -170.58819580078125 138.3407440185547   moveto
+   -168.0 148.0   lineto
+   -165.41180419921875 138.3407440185547   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -256 114 moveto sync-col (dClosed[did]!) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -168.0 28.0   moveto
+   -168.0 76.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -170.58819580078125 66.34074401855469   moveto
+   -168.0 76.0   lineto
+   -165.41180419921875 66.34074401855469   lineto
+stroke
+   0 -14 moveto select-col () show
+   -224 50 moveto guard-col (dcl >= 1) show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -78.71250915527344 80.4011459350586   moveto
+   -9.287487983703613 23.598854064941406   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -15.124401092529297 31.718608856201172   moveto
+   -9.287487983703613 23.598854064941406   lineto
+   -18.40228271484375 27.712312698364258   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -96.9195327758789 96.02757263183594   moveto
+   -159.08047485351562 151.97242736816406   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -153.63221740722656 143.58692932128906   moveto
+   -159.08047485351562 151.97242736816406   lineto
+   -150.16940307617188 147.43450927734375   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -308.0 160.0   moveto
+   -180.0 160.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -189.6592559814453 162.58819580078125   moveto
+   -180.0 160.0   lineto
+   -189.6592559814453 157.41180419921875   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -288 146 moveto sync-col (dClosed[did]!) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -179.3842010498047 163.79473876953125  moveto
+   -230.51316678068324 180.83772305626655 lineto
+   -240.0 184.0 -240.0 184.0 -249.57826296964785 181.126521535791 curveto   -308.5060729980469 163.44818115234375  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -298.5104675292969 163.7447052001953   moveto
+   -308.5060729980469 163.44818115234375   lineto
+   -299.9978942871094 168.70278930664062   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -280 186 moveto sync-col (dClose[did]?) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   132.0 16.0   moveto
+   12.0 16.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   21.659257888793945 13.411809921264648   moveto
+   12.0 16.0   lineto
+   21.659257888793945 18.58819007873535   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   32 18 moveto sync-col (dOpened[did]!) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   10.965738296508789 11.126338958740234  moveto
+   62.86188453734962 -11.938615286473098 lineto
+   72.0 -16.0 72.0 -16.0 81.13811532133722 -11.938614968518518 curveto   133.0342559814453 11.126338958740234  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   123.1563491821289 9.568461418151855   moveto
+   133.0342559814453 11.126338958740234   lineto
+   125.25867462158203 4.838223457336426   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   40 -22 moveto sync-col (dOpen[did]?) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -12.0 16.0   moveto
+   -156.0 16.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -146.3407440185547 13.411809921264648   moveto
+   -156.0 16.0   lineto
+   -146.3407440185547 18.58819007873535   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -120 2 moveto sync-col (dClose[did]?) show
+   -112 26 moveto assign-col (dcl = 0) show
+newpath edge-lw setlinewidth
+   trans-col
+   -156.0 160.0   moveto
+   -12.0 160.0   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -21.659257888793945 162.58819580078125   moveto
+   -12.0 160.0   lineto
+   -21.659257888793945 157.41180419921875   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -120 170 moveto sync-col (dOpen[did]?) show
+   -104 146 moveto assign-col (dcl = 0) show
+%%EOF

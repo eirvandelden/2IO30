@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Contents: The title page
+% $Id: title.tex,v 1.2 2003/03/19 20:57:47 oetiker Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\pdfoutput\undefined % We're not running pdftex
+\else
+\pdfbookmark{Titelblad}{title} \fi
+\newlength{\centeroffset}
+\setlength{\centeroffset}{-0.5\oddsidemargin}
+\addtolength{\centeroffset}{0.5\evensidemargin}
+%\addtolength{\textwidth}{-\centeroffset}
+\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\noindent\hspace*{\centeroffset}\makebox[0pt][l]{\begin{minipage}{\textwidth}
+\flushright
+{\Huge\bfseries Wafer stepper\\
+                  Systeem analyse\\}
+\noindent\rule[-1ex]{\textwidth}{5pt}\\[2.5ex]
+\hfill\emph{\Large OGO 1.3: Groep 7}
+\end{minipage}}
+
+\vspace{\stretch{1}}
+\noindent\hspace*{\centeroffset}\makebox[0pt][l]{\begin{minipage}{\textwidth}
+\flushright
+{\bfseries
+door:\\
+\begin{tabular}{ r | c}
+  \multicolumn{2}{c}{ } \\
+  Etienne van Delden & 0618959  \\
+  Gijs Direks        & 0611093  \\
+  Sanne Ernst        & 0588898  \\
+  Bas Goorden        & 0598669  \\
+  Stef Sijben        & 0607426  \\
+  Coen van der Wel   & 0608467  \\
+
+\end{tabular}\\ [3ex]}
+versie 2.0\\
+05-24-2007
+\end{minipage}}
+
+%\addtolength{\textwidth}{\centeroffset}
+\vspace{\stretch{2}}
+
+
+
+\endinput

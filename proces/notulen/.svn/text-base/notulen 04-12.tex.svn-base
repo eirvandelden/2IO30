@@ -1,0 +1,88 @@
+%% DOCUMENT DECLARATIE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{article}
+
+%% USE PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex]{graphicx}
+\else
+    \usepackage{graphicx}
+\fi
+
+%% TITEL DECLARATIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notulen - OGO1.3, groep 7}
+\author{OGO1.3, groep 7}
+\date{12-04-07}
+
+%% CREËER TITEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\ifpdf
+    \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+    \DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+\maketitle
+
+%% START NOTULEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opening vergadering: 13:35 uur }
+    \begin{itemize}
+        \item Voorzitter: Sanne Ernst
+        \item Notulist: Gijs Direks
+        \item Afwezige leden: -
+    \end{itemize}
+
+\section{Bespreken van notulen vorige vergadering}
+    \begin{itemize}
+        \item Bij het werkplan staan Peter Veldkamp's opmerkingen over de deadlines fout
+        genotuleerd, we moeten ofwel interne en externe deadlines
+        hanteren, ofwel een deadline hanteren, maar wel tijd na die
+        deadline inroosteren voor het verwerken van feedback. Er is
+        besloten om de optie met interne en externe deadlineste
+        hanteren.
+        \item Bij afspraken staat 'engels commentaar', dit moet
+        'Engels commentaar' zijn.
+    \end{itemize}
+
+\section{Mededelingen tutor}
+    \begin{itemize}
+        \item Er zijn twee verschillende UPPAAL-modellen. Het eerste
+        model bevat het statisch en dynamisch gedrag van het
+        apparaat, het tweede model gaat over de aansturing door de
+        processor (routines e.d.).
+    \end{itemize}
+
+\section{Mededelingen leden}
+    \begin{itemize}
+        \item Gijs is naar het studentenoverleg gegaan. We zijn
+        ongeveer even ver als de andere groepen. Daarnaast is Dhr.
+        Moussavi volgende week afwezig - in verband hiermee zou hij
+        het bedradingsschema het liefst vandaag of morgen al hebben.
+        \item Etienne merkte op dat alleen hij en Coen naar de
+        presentatietraining gaan, omdat alle andere leden deze al
+        gevolgd hadden.
+    \end{itemize}
+
+\section{Planning}
+    \begin{itemize}
+        \item Vandaag: Bedradingsschema, Werkplan
+        \item Het werkplan wordt ook nog aangepast, zodat er
+        rekening wordt gehouden met interne deadlines en feedback
+        van de tutor.
+    \end{itemize}
+
+
+\section{Sluiting}
+    \begin{itemize}
+        \item Sluiting vergadering om 13:55
+    \end{itemize}
+
+%% EIND DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\boxtimes$
+\end{document}

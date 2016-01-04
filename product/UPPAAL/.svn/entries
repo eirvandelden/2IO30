@@ -1,0 +1,225 @@
+8
+
+dir
+225
+https://svn.stefsybo.nl/OGO1.3/product/UPPAAL
+https://svn.stefsybo.nl/OGO1.3
+
+
+
+2007-05-24T09:00:59.142338Z
+135
+stef
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+32159d3f-aa2c-0410-a356-cacda1791be4
+
+lamp.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+51d2f40c61d0eeaed72cffb23800e281
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+Systeemontwerp Declaraties.cdr
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+4362187bdde88311af09fb907d089554
+2007-04-24T12:39:01.952483Z
+64
+bas
+has-props
+
+uppaal.tex
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+ae1bf284f70b1c509c11bf8ff30e8abe
+2007-04-27T07:39:57.396754Z
+88
+gijs
+
+Uppaal Automata.pdf
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+570d692544caf1d78021e9c3996eb18a
+2007-04-27T07:39:57.396754Z
+88
+gijs
+has-props
+
+door.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+3073d817c46434cc919eb9fefa74933a
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+conveyor.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+08d1a24a56443dfec327a88a59934600
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+Systeemontwerp ProgramRun.cdr
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+4fcfcb87cf2f33346ea899a9ae55f5ca
+2007-04-24T12:39:01.952483Z
+64
+bas
+has-props
+
+Hardware.xml
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+88675c41a784fc6e379b70098e24aede
+2007-05-03T14:12:13.867987Z
+110
+stef
+
+Systeemontwerp ProgramRun.pdf
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+138465faf48a17f32099dd639a1ec981
+2007-04-26T15:15:55.317169Z
+81
+coen
+has-props
+
+sensor.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+79477edc24bda3e630079db27e360969
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+falloff.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+6c2bb0b060ac258b90c3fe27cdda1f8d
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+verify_queries.q
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+132134ab5428b6d9c939f32c333a87d9
+2007-05-24T09:00:59.142338Z
+135
+stef
+
+button.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+194df0e27eb023f42938dc5c14c1ede1
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+conveyorBF.eps
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+a627ccd3d8f1f0a0ffe7ec22ec6740e6
+2007-05-03T14:12:20.378127Z
+111
+bas
+
+Systeemontwerp.xml
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+9a23187a2beb49ec87949565d6e57429
+2007-05-24T09:00:59.142338Z
+135
+stef
+
+Systeemontwerp Overige automaten.cdr
+file
+
+
+
+
+2007-05-29T18:16:26.000000Z
+8f35ed46b2581e4b82207558c4d59b7b
+2007-04-24T12:39:01.952483Z
+64
+bas
+has-props
+

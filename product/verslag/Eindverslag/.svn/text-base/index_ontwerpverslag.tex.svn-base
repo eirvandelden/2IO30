@@ -1,0 +1,6 @@
+
+\section{Inleiding van het systeemontwerp}
+\input{inleiding_ontwerpverslag}
+
+\section{Hardware}
+\input{hardware_include}

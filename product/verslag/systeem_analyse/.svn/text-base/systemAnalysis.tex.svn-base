@@ -1,0 +1,92 @@
+\documentclass[]{report}
+%% Gebruikte pakketten
+\usepackage[dutch]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{textcomp}
+\usepackage[]{hyperref}
+\usepackage{fancyhdr}
+
+\title{Systeem analyse verslag UPPAAL}
+\author{Groep 7 OGO 1.3 2006-2007}
+\date{05-22-2007}
+
+
+\begin{document}
+  \include{titelblad}
+  \tableofcontents
+
+    \chapter{Inleiding}
+        Bij de systeem analyse controleren we of ons UPPAAL-model correct is. Om dit te controleren moeten
+        we eerst defini\"eren wat we verstaan onder ,,correct''. Wij zullen dit defini\"eren met
+        behulp van eigenschappen waaraan ons systeem dient te voldoen; wanneer dit het geval is, achten
+        wij het systeem correct. Deze eigenschappen zullen we toelichten, vertalen naar UPPAAL-queries, en
+        testen volgens het verificatiesysteem van UPPAAL zelf. De resultaten zullen we ook evalueren in dit
+        document.
+
+
+    \chapter{Belangrijke eigenschappen functionaliteit}
+        Hieronder is beschreven aan welke eigenschappen ons systeem moet voldoen. Het vierde item kan echter niet
+        gegarandeerd worden bij indrukken van de noodknop; met deze uitzondering zal bij de simulatie en verificatie
+        rekening worden gehouden.
+        \begin{enumerate}
+            \item Er zijn nooit twee deuren tegelijk open.
+            \item De lamp is alleen aan bij belichten van een wafer.
+            \item Vlak voordat een wafer aan ,,zijn cyclus'' begint is deur 1 open en deur 2 dicht.
+            \item Voor alle paden geldt dat een wafer binnen 20 seconden in een bak ligt of verloren is gegaan, mits er niet
+                  op de noodknop wordt gedrukt.
+            \item Het systeem crasht alleen wanneer het moet crashen.
+        \end{enumerate}
+
+    \chapter{Methodiek simuleren en verifi\"eren eigenschappen}
+        Voor het simuleren van het systeem gebruiken wij de Simulator welke in UPPAAL beschikbaar is. Deze
+        laten we random acties simuleren op de hoogste snelheid voor een duur van maximaal 5 minuten. Dit
+        proces herhalen we enkele malen om er zeker van te zijn dat ons systeem inderdaad geen deadlocks bevat.\\
+        \\
+        Bij het verifi\"eren maken wij gebruik van z.g.n. queries, welke uitdrukken wat precies wij willen
+        verifi\"eren. De nummering is gelijk aan die van de vorige lijst:
+        \begin{enumerate}
+            \item A[] (door1.Closed or door1.PseudoClosing or door2.Closed or door2.PseudoClosing)\\
+                \emph{    Er moet altijd gelden dat er minstens 1 deur gesloten is. De toestandsnaam PseudoClosing
+                            zou kunnen impliceren dat de deur aan het sluiten is; dit is echter een tussentoestand
+                            in UPPAAL en in feite is de deur dan al gesloten.}
+            \item A[] (lamp.On) imply (main.Burning)\\
+                \emph{    Als de UV-lamp aanstaat, moet gelden dat er een wafer wordt gebrand.}
+            \item A[] main.ReadyToLoadWafer imply (door1.Open and door2.Closed)\\
+                \emph{    Voordat er een wafer wordt geladen, staat deur 1 open en is deur 2 gesloten. ``main'' is de naam
+                van het hoofdprogramma.}
+            \item A[] main.ReadyToLoadWafer imply (main.total $<$= 15)\\
+                \emph{    Voordat er een nieuwe wafer wordt geladen en dus de vorige reeds klaar is, moet
+                            gelden dat het aantal verstreken seconden niet hoger is dan 15 sinds laden van
+                            die wafer.}
+            \item A[] managecrash.Crashed or not deadlock\\
+                \emph{    Het systeem is ofwel in een crash-toestand, of draait zoals normaal.}
+        \end{enumerate}
+
+    \chapter{Simulatie- en verificatieresultaten}
+        Volgens de eerste beschreven methode hebben wij het systeem gesimuleerd. Formeel zijn de resultaten hieronder
+        beschreven. Informeel komt het erop neer dat al onze simulaties goed zijn verlopen en we dus ons systeem als
+        correct mogen beschouwen. Helaas komt het regelmatig voor (dankzij UPPAAL's testsysteem) dat de deuren vast-
+        lopen en komt daardoor in een crash-toestand. Dit is echter de bedoeling wanneer een deur vastloopt, dus is
+        een resultaat van deze aard een gewenst resultaat.\\
+        \\
+        \begin{tabular}{ c | l | c }
+            Duur & Opmerkingen & Resultaat\\
+            \hline
+            9s & deur weigert -$>$ crash & succesvol\\
+            2s & deur weigert -$>$ crash & succesvol\\
+            1s & deur weigert -$>$ crash & succesvol\\
+            5s & deur weigert -$>$ crash & succesvol\\
+            4s & deur weigert -$>$ crash & succesvol\\
+        \end{tabular}\\\\
+        \\
+        Volgens de tweede beschreven methode hebben wij het systeem geverifi\"eerd. Bij al onze opgegeven queries
+        gaf het systeem het resultaat ,,Property is satisfied'', wat dus inhoudt dat in alle gevallen het systeem
+        voldoet aan de opgegeven eigenschappen.\\
+
+    \chapter{Conclusie}
+        We kunnen dus concluderen dat ons systeem voldoet aan de gestelde eisen en eigenschappen.
+
+\end{document}

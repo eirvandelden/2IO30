@@ -1,0 +1,288 @@
+8
+
+dir
+225
+https://svn.stefsybo.nl/OGO1.3/proces/notulen
+https://svn.stefsybo.nl/OGO1.3
+
+
+
+2007-06-08T13:16:10.735288Z
+188
+sanne
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+32159d3f-aa2c-0410-a356-cacda1791be4
+
+notulen 04-12.pdf
+file
+
+
+
+
+2007-05-29T18:43:15.000000Z
+6ecd1df92af700b6767f2f722765e8d9
+2007-04-18T14:51:25.726677Z
+47
+etienne
+has-props
+
+notulen 05-03.pdf
+file
+
+
+
+
+2007-05-29T18:43:15.000000Z
+cabef7c2f46c941f4c12d9f56e20fdb1
+2007-05-03T13:59:06.015872Z
+109
+stef
+has-props
+
+notulen 05-31.pdf
+file
+
+
+
+
+2007-06-09T16:41:16.000000Z
+290118546d400a71486856dae5efb7ff
+2007-06-08T13:16:10.735288Z
+188
+sanne
+has-props
+
+notulen 04-05.pdf
+file
+
+
+
+
+2007-05-29T18:43:15.000000Z
+00d7a0f9d87267cb363623ebe5e8fc8e
+2007-04-05T14:16:43.029404Z
+30
+etienne
+has-props
+
+notulen 05-24.pdf
+file
+
+
+
+
+2007-05-29T18:43:15.000000Z
+31882d1c24d799de983b3cc1d8977f9c
+2007-05-24T15:01:48.856801Z
+150
+coen
+has-props
+
+notulen 05-15.pdf
+file
+
+
+
+
+2007-05-29T18:43:15.000000Z
+8a7f5c5b274b7913bbfe24e12f465eb0
+2007-05-15T13:00:29.905491Z
+117
+coen
+has-props
+
+notulen 04-26.pdf
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+3d6e7ebd84dac876ef491f7a552211ba
+2007-05-03T12:25:08.377850Z
+101
+bas
+has-props
+
+notulen 06-07.pdf
+file
+
+
+
+
+2007-06-09T16:41:16.000000Z
+6d688ad401037e73a3bc2a44352b513b
+2007-06-08T13:16:10.735288Z
+188
+sanne
+
+notulen 04-19.pdf
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+a3a12792d93ae844f4563f56aeef73c4
+2007-04-26T12:40:48.530952Z
+75
+bas
+has-props
+
+notulen 04-12.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+b85a10839ea2163d4ac7a03eb6555cff
+2007-04-18T14:51:25.726677Z
+47
+etienne
+
+notulen 05-03.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+90e754eb667f211e44a4b03371ba14a3
+2007-05-03T13:59:06.015872Z
+109
+stef
+
+notulen 04-05.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+09469f3713712168c8d576a147478501
+2007-04-05T14:16:43.029404Z
+30
+etienne
+
+notulen 05-31.tex
+file
+
+
+
+
+2007-06-09T16:41:30.000000Z
+84c35963d3016db87e75a2b4abe289ce
+2007-06-08T13:16:10.735288Z
+188
+sanne
+
+template.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+67a832feb17b1c28f16fef102a3b5b46
+2007-03-29T15:12:10.124604Z
+13
+coen
+
+notulen 05-24.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+594752aea48e8ac3dd72e6bfb2d605d5
+2007-05-24T15:01:48.856801Z
+150
+coen
+
+notulen 05-15.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+ba9e0cc6b79da6c083c5d20ee7396f9e
+2007-05-15T12:57:41.643717Z
+116
+gijs
+
+notulen 03-27.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+58489cec7c61f940a5dd26bab1994397
+2007-04-05T14:15:35.776221Z
+29
+etienne
+
+notulen 04-26.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+df81b2192fddf2198929d32ca3b66c7e
+2007-05-03T12:25:37.318650Z
+102
+bas
+
+notulen 06-07.tex
+file
+
+
+
+
+2007-06-09T16:41:30.000000Z
+9647ec63faa04ea673c7720e5a01c6f3
+2007-06-08T13:16:10.735288Z
+188
+sanne
+
+notulen 04-19.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+dbca431a64e870977f1158de6386ff85
+2007-04-19T15:16:13.418667Z
+58
+sanne
+
+notulen 03-29.tex
+file
+
+
+
+
+2007-05-29T18:43:16.000000Z
+b4fb7090774e8a344835c62e72775fd0
+2007-04-05T14:15:35.776221Z
+29
+etienne
+

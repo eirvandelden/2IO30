@@ -1,0 +1,182 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title:   Template 'Lamp'.
+%%Creator: UPPAAL 4.0.6 (rev. 2987), March 2007
+%%Pages: 0
+%%BoundingBox: -117 -77 39 -11
+%%EndComments
+
+% Basic coordinate transformation.
+0.5 0.5 scale
+
+% Move the origin.
+0 -176 translate
+
+% Size of graphical elements.
+/vertex-radius 12 def
+/vertex-urgent-radius 5 def
+/vertex-commit-radius 5 def
+/vertex-init-radius 8 def
+/vertex-lw 1.2 def
+/edge-lw 0.5 def
+
+% Color setting of graphical elements.
+/black { 0 0 0 setrgbcolor } def
+/vertex-fill-col { 0.647 0.686 0.803 setrgbcolor} def
+/vertex-ol-col { black } def
+/urgent-ol-col { black } def
+/commit-ol-col { black } def
+/initial-ol-col { black } def
+/state-name-col { 0.192 0.396 0.549 setrgbcolor } def
+/inv-col { state-name-col } def
+/select-col { 0.541 0.220 0.380 setrgbcolor } def
+/guard-col { select-col } def
+/sync-col { guard-col } def
+/assign-col { guard-col } def
+/trans-col { black } def
+
+% Draw (filled) vertex at given position.
+/vertex { 
+   2 copy
+   vertex-fill-col
+   newpath vertex-lw setlinewidth 
+   /vertex-radius load 0 360 arc fill
+   vertex-ol-col
+   /vertex-radius load 0 360 arc stroke
+} def
+
+% Mark vertex as urgent.
+/urgent { 
+   urgent-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-urgent-radius load 150 30 arc stroke 
+} def
+
+% Mark vertex as committed.
+/commit { 
+   commit-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-commit-radius load 50 310 arc stroke 
+} def
+
+% Mark vertex as initial.
+/initial { 
+   initial-ol-col
+   newpath vertex-lw setlinewidth 
+   /vertex-init-radius load 0 360 arc stroke 
+} def
+
+% Vertices.
+% Font used for vertex names and invariants.
+/Helvetica-Bold findfont 14 scalefont setfont
+-80 120 vertex
+   -80 120 initial
+   -80 120 urgent
+   -88 138 moveto state-name-col (Init) show
+   0 -14 moveto inv-col () show
+-152 64 vertex
+   -162 80 moveto state-name-col (Off) show
+   0 -14 moveto inv-col () show
+-8 64 vertex
+   -18 80 moveto state-name-col (On) show
+   0 -14 moveto inv-col () show
+
+% Edges.
+% Font used for selects, guards, syncs and assigns.
+/Helvetica findfont 14 scalefont setfont
+newpath edge-lw setlinewidth
+   trans-col
+   -70.52777099609375 112.6327133178711   moveto
+   -17.472227096557617 71.3672866821289   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -23.507789611816406 79.34049224853516   moveto
+   -17.472227096557617 71.3672866821289   lineto
+   -26.685779571533203 75.25450134277344   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -89.47222900390625 112.6327133178711   moveto
+   -142.52777099609375 71.3672866821289   lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -133.31422424316406 75.25450134277344   moveto
+   -142.52777099609375 71.3672866821289   lineto
+   -136.49220275878906 79.34049224853516   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   0 -14 moveto sync-col () show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -161.98460388183594 70.65640258789062  moveto
+   -191.67949705662156 90.4529980377477 lineto
+   -200.0 96.0 -200.0 96.0 -200.0 86.0 curveto   -200.0 42.0 lineto
+   -200.0 32.0 -200.0 32.0 -191.67949705662156 37.54700196225229 curveto   -161.98460388183594 57.343597412109375  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -171.45726013183594 54.13911056518555   moveto
+   -161.98460388183594 57.343597412109375   lineto
+   -168.58592224121094 49.83209991455078   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -232 58 moveto sync-col (lOff?) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   1.9846038818359375 70.65640258789062  moveto
+   31.679497056621564 90.4529980377477 lineto
+   40.0 96.0 40.0 96.0 40.0 86.0 curveto   40.0 42.0 lineto
+   40.0 32.0 40.0 32.0 31.679497056621564 37.54700196225229 curveto   1.9846038818359375 57.343597412109375  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   8.585923194885254 49.83209991455078   moveto
+   1.9846038818359375 57.343597412109375   lineto
+   11.45726203918457 54.13911056518555   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   48 58 moveto sync-col (lOn?) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -19.926605224609375 62.67481994628906  moveto
+   -70.06116262247737 57.104314983670406 lineto
+   -80.0 56.0 -80.0 56.0 -89.93883737752263 57.104314983670406 curveto   -140.07339477539062 62.67481994628906  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -130.759033203125 59.03577423095703   moveto
+   -140.07339477539062 62.67481994628906   lineto
+   -130.18739318847656 64.18049621582031   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -88 42 moveto sync-col (lOff?) show
+   0 -14 moveto assign-col () show
+newpath edge-lw setlinewidth
+   trans-col
+   -140.07339477539062 65.32518005371094  moveto
+   -89.93883737752263 70.8956850163296 lineto
+   -80.0 72.0 -80.0 72.0 -70.06116262247737 70.8956850163296 curveto   -19.926605224609375 65.32518005371094  lineto
+stroke
+newpath edge-lw setlinewidth
+   trans-col
+   -29.240966796875 68.96422576904297   moveto
+   -19.926605224609375 65.32518005371094   lineto
+   -29.812602996826172 63.81950759887695   lineto
+stroke
+   0 -14 moveto select-col () show
+   0 -14 moveto guard-col () show
+   -88 82 moveto sync-col (lOn?) show
+   0 -14 moveto assign-col () show
+%%EOF

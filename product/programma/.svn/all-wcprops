@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/OGO1.3/!svn/ver/219/product/programma
+END
+init.asm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/OGO1.3/!svn/ver/215/product/programma/init.asm
+END
+main.asm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/OGO1.3/!svn/ver/215/product/programma/main.asm
+END
+emergenc.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/OGO1.3/!svn/ver/219/product/programma/emergenc.asm
+END
+wt_subs.asm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/OGO1.3/!svn/ver/219/product/programma/wt_subs.asm
+END
+mem_subs.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/OGO1.3/!svn/ver/196/product/programma/mem_subs.asm
+END
+int_vect.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/OGO1.3/!svn/ver/215/product/programma/int_vect.asm
+END
+ioh_subs.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/OGO1.3/!svn/ver/219/product/programma/ioh_subs.asm
+END
+iol_subs.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/OGO1.3/!svn/ver/219/product/programma/iol_subs.asm
+END
